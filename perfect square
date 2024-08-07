@@ -1,0 +1,13 @@
+function isSquare(number) {
+  if (number < 0) {
+     return false; // Negative numbers cannot be perfect squares
+  }
+
+  const sqrt = Math.sqrt(number);
+  return Number.isInteger(sqrt);
+  if (sqrt === Math.floor(sqrt)) {
+    return true; // The number is a perfect square
+  } else {
+    return false; // The number is not a perfect square
+  }
+}
