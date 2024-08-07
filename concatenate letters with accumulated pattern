@@ -1,0 +1,9 @@
+function accum(s) {
+  return s
+    .split('') // Split the string into individual characters
+    .map((char, index) => char.toUpperCase() + char.toLowerCase().repeat(index)) // Format each character
+    .join('-'); // Join formatted characters with a dash
+}
+
+console.log(accum('eRt')); // Outputs: "E-Rr-Ttt"
+
